@@ -2,7 +2,8 @@ import { Poppins } from 'next/font/google'
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const inter = Poppins({ subsets: ["latin"],weight:['400'] });
+
+const inter = Poppins({ subsets: ["latin"],weight:['400'],display: 'swap' });
 
 export const metadata = {
   metadataBase: new URL('https://udonswap.org/'),
