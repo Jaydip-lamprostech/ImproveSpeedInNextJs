@@ -1,0 +1,333 @@
+.homeMainDiv {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.boxContainer {
+  position: relative;
+  width: 88%;
+  height: 60vh;
+  margin: 0 auto;
+  /* margin-top: -60px; */
+  // margin-top: -10.1vh;
+  margin-top: -70px;
+}
+
+.imgdiv {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 17vh;
+  left: 100px;
+  width: 79%;
+  font-family: "Actay", sans-serif;
+  color: white;
+  background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 5vw;
+  animation: fadeInUp 2.5s ease forwards,
+    glow 2000ms linear infinite 2000ms;
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.starimg {
+  height: auto;
+  width: 5vw;
+  margin: 2px;
+  animation: zoomInOut 3s infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.boxContainer2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  height: 32vh;
+  margin: 0 auto;
+  margin-top: 0.5vh;
+}
+
+.tokenBox {
+  width: 29.7%;
+  height: 36.5vh;
+  // background-color: #e9e002;
+  background-color: #fdf001;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // justify-content: flex-end;
+}
+
+.tokenImg {
+  // height: 300px;
+  // width: 300px;
+  width: 17vw;
+  height: max-content;
+  max-height: 33.5vh;
+  border-radius: 30px;
+
+  // padding-top: 20px
+}
+
+.secdiv {
+  width: 70%;
+  height: 47vh;
+  margin-top: -10.5vh;
+}
+
+.redimg {
+  width: 100%;
+  height: 100%;
+}
+
+.imgdiv2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.textOverlay2 {
+  position: absolute;
+  top: 7vh;
+  left: 36%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5vw;
+  padding-left: 4vw;
+  border-left: 5px solid transparent;
+  /* Initial state */
+  line-height: 147%;
+  letter-spacing: 1px;
+  animation: fadeInRight 2.5s ease forwards, borderAnimation 3s ease forwards;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: white;
+  }
+}
+
+.sec2Img {
+  position: absolute;
+  height: 48.5vh;
+  // width: 40%;
+  aspect-ratio: 1;
+  top: 51vh;
+  right: 0px;
+  overflow: hidden;
+}
+
+.flowerhalf,
+.flowerfull {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: -38%;
+}
+
+.flowerfull {
+  display: none;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  position: relative;
+}
+
+
+@media screen and (min-width:1800px) {
+  .boxContainer {
+    margin-top: -10.1vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .boxContainer {
+    margin-top: -40px;
+  }
+
+  .sec2Img {
+    top: 50vh;
+  }
+
+  .textOverlay {
+    top: 19vh;
+    left: 60px;
+
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .homeMainDiv {
+    height: max-content;
+    overflow: hidden;
+  }
+
+  .boxContainer {
+    height: 35vh;
+    margin-top: -5vh;
+    width: 98%;
+  }
+
+  .textOverlay {
+    top: 14vh;
+    line-height: 4vh;
+    left: 6vh;
+    width: 75%
+  }
+
+  .boxContainer2 {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    height: max-content;
+    margin-top: -4px;
+    width: 98%;
+  }
+
+  .secdiv {
+    width: 100%;
+    height: 28vh;
+    margin-top: 0;
+  }
+
+  .redimg {
+    float: right;
+    width: 69%;
+    height: 100%;
+    margin-top: -4.7vh;
+  }
+
+  .imgdiv2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .tokenBox {
+    width: 100%;
+    height: 29vh;
+    border-radius: 10px;
+    margin-top: -3.6vh;
+  }
+
+  .tokenImg {
+    height: max-content;
+    max-height: 29vh;
+    width: 47vw;
+    border-radius: 10px;
+
+  }
+
+
+  .textOverlay2 {
+    top: 5vh;
+    left: 41%;
+    width: 50%;
+    font-size: 2.6vw;
+  }
+
+  .sec2Img {
+    position: absolute;
+    height: 27vh;
+    width: max-content;
+    top: 37vh;
+    left: 0;
+    float: left;
+    transform: rotate(180deg);
+  }
+
+  .flowerhalf {
+    display: none;
+  }
+
+  .flowerfull {
+    display: block;
+    width: auto;
+    height: 100%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 375px) {
+    .sec2Img {
+      position: absolute;
+      height: 25vh;
+      width: max-content;
+      top: 36.6vh;
+      left: 0;
+      float: left;
+      transform: rotate(180deg);
+    }
+
+    .flowerfull {
+      display: block;
+      right: 0;
+
+    }
+  }
+}
