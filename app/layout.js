@@ -3,7 +3,7 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
-const inter = Poppins({ subsets: ["latin"],weight:['400'],display: 'swap' });
+const poppins = Poppins({ subsets: ["latin"],weight:'400',display: 'swap', preload:true });
 
 export const metadata = {
   metadataBase: new URL('https://udonswap.org/'),
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         {children}
         <SpeedInsights/>
         </body>
