@@ -4,7 +4,7 @@ import Navbar from "../navbar/navbar";
 import titleImg from "@/public/Subtract.png";
 import union from "@/public/Union.png";
 import star from "@/public/star.png";
-import React from "react";
+import React, { Suspense } from "react";
 import udonswap from '@/public/Udonswap_resized.gif'
 import half from "@/public/half.png";
 import full from "@/public/flowerhalf.png";

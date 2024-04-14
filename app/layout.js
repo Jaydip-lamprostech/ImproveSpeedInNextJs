@@ -3,7 +3,7 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
-const poppins = Poppins({ subsets: ["latin"],weight:'400',display: 'swap', preload:true });
+const poppins = Poppins({ subsets: ["latin"],weight:'400',display:'swap', preload:false });
 
 export const metadata = {
   metadataBase: new URL('https://udonswap.org/'),
